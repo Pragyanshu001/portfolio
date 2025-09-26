@@ -192,12 +192,7 @@ section#parallax img#layer2 {
   flex-wrap: wrap;      /* default for small screens */
 }
 
-/* @media screen and (min-width: 840px) {
-  .about .row {
-    padding: 0;        
-    flex-wrap: nowrap;  
-  }
-} */
+
 
 
 .about .row .content {
@@ -249,40 +244,7 @@ section#parallax img#layer2 {
   color: #011aff;
 }
 
-/* .resumebtn {
-  margin: 2rem 1rem 0 0;
-}
-.resumebtn .btn {
-  padding: 1rem 3rem;
-  align-items: center;
-  border-radius: 0.5em;
-  transition: 0.3s;
-  color: #fff;
-  background: #2506ad;
-  font-family: "Nunito", sans-serif;
-  position: relative;
-}
-.resumebtn .btn span {
-  font-weight: 600;
-  font-size: 1.8rem;
-  letter-spacing: 0.1rem;
-}
-.resumebtn .btn i {
-  margin-left: 0.3rem;
-  font-size: 2rem;
-  transition: 0.3s;
-  position: absolute; 
-  top: 10px;
-  
-}
-.resumebtn .btn:hover {
-  background: #1a047e;
-  box-shadow: 0px 5px 10px rgba(48, 68, 247, 0.6);
-}
-.resumebtn .btn:hover i {
-  transform: translateX(5px);
-} */
-
+/
 
 .resumebtn {
   display: flex;
@@ -407,6 +369,7 @@ background: linear-gradient(to bottom, #57059e, #4a00e0);  color: #fff;
 .skills .container .bar:hover {
   box-shadow: 0 8px 10px rgba(0, 2, 68, 0.8) !important;
   background-color: rgba(0, 0, 0, 0.9) !important;
+  scale: 1.1 !important;
 }
 .skills .container .bar .info {
   display: flex;
@@ -564,10 +527,7 @@ background: linear-gradient(to bottom, #57059e, #4a00e0);  color: #fff;
 /* work section starts */
         .projects {
             background: #1c0522;
-            /* max-height: 100vh; */
             height: auto;
-            /* margin-top: 5rem; */
-            /* height: 100%; */
         }
 
         .projects h2 {
@@ -686,49 +646,7 @@ background: linear-gradient(to bottom, #57059e, #4a00e0);  color: #fff;
             }
         }
 
-        /* Project card hover effect */
-.work .box-container .box {
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  cursor: pointer;
-}
 
-.work .box-container .box:hover {
-  transform: translateY(-10px) scale(1.05);
-  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.3);
-}
-
-.work .box-container .box img {
-  transition: transform 0.3s ease;
-}
-
-.work .box-container .box:hover img {
-  transform: scale(1.1);
-}
-
-.work .box-container .box .content {
-  transition: top 0.3s ease, background 0.3s ease;
-  background: rgba(255, 255, 255, 0.9);
-}
-
-.work .box-container .box:hover .content {
-  top: 20%;
-  background: rgba(255, 255, 255, 0.95);
-}
-
-/* Optional: add fade-in for content elements */
-.work .box-container .box .content .tag,
-.work .box-container .box .content .desc {
-  opacity: 0;
-  transition: opacity 0.3s ease 0.1s;
-}
-
-.work .box-container .box:hover .content .tag,
-.work .box-container .box:hover .content .desc {
-  opacity: 1;
-}
-
-
-/* back to home button */
 
 
 /* contact section starts */
@@ -760,14 +678,6 @@ background: linear-gradient(to bottom, #57059e, #4a00e0);  color: #fff;
   flex-wrap: wrap;
 } 
 
-
-/* 
-.contact .image-box img {
-  width: 100%;
-  height: auto;
-  object-fit: cover;
-  border-radius: 1rem;
-} */
 
 
 .contact form {
