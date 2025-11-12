@@ -7,7 +7,7 @@ gsap
     scrollTrigger: {
       trigger: "#parallax",
       start: "top top",
-      end: "+=700", // scroll distance for animation
+      end: "+=900", // scroll distance for animation
       //   end: "+=100%",
       scrub: true,
       pin: true, // page scroll will pause until animation completes
