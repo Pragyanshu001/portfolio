@@ -913,6 +913,225 @@ form .button-area {
 }
 /* scroll top ends */
 
+/* experience section starts */
+.experience {
+  background: #1c0522;
+  padding: 4rem 9%;
+  min-height: 100vh;
+  height: auto;
+  overflow: visible;
+}
+
+.experience .heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.experience .heading span {
+  color: #fff;
+  margin-left: 1rem;
+}
+
+.experience .quote {
+  text-align: center;
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: #9a9fad;
+  font-family: "Nunito", sans-serif;
+  margin-bottom: 4rem;
+}
+
+.experience .quote span {
+  font-style: italic;
+  border-bottom: 1px solid rgba(130, 41, 171, 0.3);
+  padding-bottom: 0.5rem;
+}
+
+.experience .timeline {
+  position: relative;
+  max-width: 1200px;
+  margin: 2rem auto;
+}
+
+/* Timeline central line */
+.experience .timeline::after {
+  content: '';
+  position: absolute;
+  width: 6px;
+  background: var(--main-color);
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px;
+  z-index: 1;
+}
+
+.experience .container {
+  padding: 10px 40px;
+  position: relative;
+  background-color: inherit;
+  width: 50%;
+  z-index: 2;
+}
+
+/* circles on timeline using native emoji */
+.experience .container::after {    
+  content: "💼";
+  position: absolute;
+  width: 36px;
+  height: 36px;
+  right: -22px;
+  background-color: #1c0522;
+  border: 3px solid rgb(233, 195, 43);
+  top: 15px;
+  border-radius: 50%;
+  z-index: 100;
+  font-size: 1.6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.experience .left {
+  left: 0;
+}
+
+.experience .right {
+  left: 50%;
+}
+
+.experience .right::after {
+  left: -22px;
+}
+
+.experience .content {
+  background: #240a34;
+  border: 1px solid rgb(233, 195, 43);
+  position: relative;
+  border-radius: 10px;
+  padding: 2rem;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+.experience .content:hover {
+  transform: scale(1.02);
+  background: rgba(87, 5, 158, 0.25);
+  box-shadow: 0 8px 25px rgba(130, 41, 171, 0.3);
+}
+
+/* Custom bordered arrows using rotated square */
+.experience .content::before {
+  content: '';
+  position: absolute;
+  top: 20px;
+  width: 15px;
+  height: 15px;
+  background: #240a34;
+  transform: rotate(45deg);
+  z-index: 1;
+}
+
+.experience .left .content::before {
+  right: -8px;
+  border-top: 1px solid rgb(233, 195, 43);
+  border-right: 1px solid rgb(233, 195, 43);
+}
+
+.experience .right .content::before {
+  left: -8px;
+  border-bottom: 1px solid rgb(233, 195, 43);
+  border-left: 1px solid rgb(233, 195, 43);
+}
+
+.experience .content .tag h2 {
+  font-size: 2.2rem;
+  color: rgb(233, 195, 43);
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.experience .content .desc h3 {
+  font-size: 1.7rem;
+  color: #fff;
+  font-weight: 600;
+}
+
+.experience .content .desc p {
+  font-size: 1.4rem;
+  color: #eee0b1;
+  margin-bottom: 1.5rem;
+  font-weight: 500;
+}
+
+.experience .content .desc ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.experience .content .desc ul li {
+  font-size: 1.4rem;
+  color: #9a9fad;
+  line-height: 1.6;
+  position: relative;
+  padding-left: 2rem;
+  margin-bottom: 0.8rem;
+}
+
+.experience .content .desc ul li::before {
+  content: '⚡';
+  position: absolute;
+  left: 0;
+  top: 0.1rem;
+  color: rgb(233, 195, 43);
+}
+
+/* Media queries - Responsive timeline on screens less than 768px wide */
+@media screen and (max-width: 768px) {
+  .experience .timeline::after {
+    left: 31px;
+  }
+  .experience .container {
+    width: 100%;
+    padding-left: 70px;
+    padding-right: 25px;
+  }
+  .experience .container::before {
+    content: '';
+    position: absolute;
+    top: 20px;
+    left: 62px;
+    width: 15px;
+    height: 15px;
+    background: #240a34;
+    border-bottom: 1px solid rgb(233, 195, 43);
+    border-left: 1px solid rgb(233, 195, 43);
+    transform: rotate(45deg);
+    z-index: 5;
+    display: block;
+  }
+  .experience .left .content::before,
+  .experience .right .content::before {
+    display: none;
+  }
+  .experience .left::after,
+  .experience .right::after {
+    left: 15px;
+  }
+  .experience .right {
+    left: 0%;
+  }
+  .experience .container::after {
+    font-size: 1.6rem;
+    line-height: 28px;
+  }
+}
+/* experience section ends */
+
   
 
 
